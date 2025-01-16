@@ -25,5 +25,12 @@ public class Calculator {
         }
         return Math.sqrt(a);
     }
+    public String toBinary(int a) {
+        if (a < 0) {
+            throw new IllegalArgumentException("Cannot convert a negative number to binary.");
+        }
+        return Integer.toBinaryString(a);  // Umwandlung der Zahl in Binärformat
+    }
+
 
 }

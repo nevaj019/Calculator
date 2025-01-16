@@ -50,4 +50,15 @@ public class CalculatorTest {
     void testSquareRootNegativeNumber() {
         assertThrows(IllegalArgumentException.class, () -> calculator.squareRoot(-1));  // Test für Quadratwurzel von negativen Zahlen
     }
+    @Test
+    void testToBinary() {
+        assertEquals("1010", calculator.toBinary(10));  // Test: 10 wird zu "1010"
+        assertEquals("111111", calculator.toBinary(63));  // Test: 63 wird zu "111111"
+        assertEquals("0", calculator.toBinary(0));  // Test: 0 wird zu "0"
+    }
+
+    @Test
+    void testToBinaryNegativeNumber() {
+        assertThrows(IllegalArgumentException.class, () -> calculator.toBinary(-5));  // Test für negative Zahl, erwartet eine Ausnahme
+    }
 }
