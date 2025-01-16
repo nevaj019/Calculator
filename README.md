@@ -9,3 +9,4 @@ This class provides methods for the following operations:
 - **Multiplication**: Calculating the product of two numbers.
 - **Division**: Dividing one number by another with error handling for division by zero.
 
+[![Java CI](https://github.com/nevaj019/Calculator/actions/workflows/ci.yml/badge.svg)](https://github.com/nevaj019/Calculator/actions/workflows/ci.yml)
